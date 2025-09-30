@@ -1,5 +1,4 @@
-import { useState } from "react";
-import fammaLogo from "@/assets/famma-logo.png";
+import FammaLogo from "@/components/FammaLogo";
 
 const Hero = () => {
   return (
@@ -30,12 +29,8 @@ const Hero = () => {
 
       {/* Logo overlay */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center">
-          <img 
-            src={fammaLogo} 
-            alt="FAMMA" 
-            className="w-full max-w-4xl mx-auto animate-float drop-shadow-[0_0_50px_rgba(255,0,0,0.8)]"
-          />
+        <div className="text-center animate-float drop-shadow-[0_0_50px_rgba(255,0,0,0.8)]">
+          <FammaLogo />
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import fammaLogo from "@/assets/famma-logo.png";
+import FammaFullLogo from "@/components/FammaFullLogo";
 
 const Hero = () => {
   return (
@@ -28,13 +28,9 @@ const Hero = () => {
       </div>
 
       {/* Logo overlay */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center">
-          <img 
-            src={fammaLogo} 
-            alt="FAMMA" 
-            className="w-full max-w-4xl mx-auto animate-float drop-shadow-[0_0_50px_rgba(255,0,0,0.8)]"
-          />
+      <div className="relative z-10 flex items-center justify-center h-full px-4">
+        <div className="animate-float drop-shadow-[0_0_50px_rgba(255,0,0,0.8)]">
+          <FammaFullLogo />
         </div>
       </div>
 
